@@ -9,6 +9,6 @@ public class LoopL {
 
 			}
 		}
-		System.out.println("1부터 100까지의 짝수의 합은 " + sum + " 입니다");
+		System.out.println("1부터 100까지의 3배수의 합은 " + sum + " 입니다");
 	}
 }
