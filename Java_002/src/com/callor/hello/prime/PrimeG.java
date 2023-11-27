@@ -9,13 +9,13 @@ public class PrimeG {
 		int index = 0;
 		for (num = 2; num < 100; num++) {
 			int i = 0;
-			for(index = 1; index < num; index++) {
-			if (num % index == 0) {
-				i = i + 1;
-			}
-			if (i == 2) {
-				System.out.println(i+"는 소수임");
-			}
+			for (index = 1; index < num; index++) {
+				if (num % index == 0) {
+					i = i + 1;
+				}
+				if (i == 2) {
+					System.out.println(i + "는 소수임");
+				}
 			}
 		}
 	}
