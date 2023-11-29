@@ -9,27 +9,29 @@ package com.callor.hello.array;
 
 public class ArraysG {
 	public static void main(String[] args) {
-		int STUDENT_LENGTH = 10;
-		int[] scoreKors = new int[STUDENT_LENGTH];
-		
-		for(int i= 0; i < scoreKors.length; i++ ) {
-			int rndNum = (int)(Math.random()* 50) + 51;
-			scoreKors[i] = rndNum;
+		int [] scoreKors = new int[10];
+		for (int i = 0; i < scoreKors.length; i++) {
+			scoreKors[i] = (int)(Math.random()* 50) +51;
 		}
-		System.out.println("-".repeat(80));
-		System.out.println("국어\t평점");
-		System.out.println("-".repeat(80));
-		
-		for(int i = 0; i < STUDENT_LENGTH; i++) {
-			System.out.printf("%3d\n", scoreKors[i]);
-		}
-		
-		
-		
+		System.out.println("=".repeat(80));
+		System.out.println(" 국어\t평점");
+		System.out.println("=".repeat(80));
+		for (int i = 0; i < scoreKors.length; i++) {
+			System.out.printf("%3d\t", scoreKors[i]);
+			String gradeScore = "F";
+			if(scoreKors[i] >= 95) gradeScore = "A+";
+			if(scoreKors[i] >= 90) gradeScore = "A";
+			if(scoreKors[i] >= 85) gradeScore = "B+";
+			if(scoreKors[i] >= 80) gradeScore = "B";
+			if(scoreKors[i] >= 75) gradeScore = "C+";
+			if(scoreKors[i] >= 70) gradeScore = "C";
+			if(scoreKors[i] >= 65) gradeScore = "D+";
+			if(scoreKors[i] >= 60) gradeScore = "D";
 
-				
+			System.out.println(gradeScore);
+		}
+		System.out.println("=".repeat(30));
 		
 		
 	}
-
 }

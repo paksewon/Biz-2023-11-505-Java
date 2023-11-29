@@ -25,6 +25,7 @@ public class ArrayFA {
 		for (int i = 0; i < scoreMaths.length; i++) {
 			scoreMaths[i] = (int) (Math.random() * 50) + 51;
 		}
+		// 총점 계산
 		for(int i = 0; i < STUDENT_LENGTH; i++) {
 			sums[i] = scoreKors[i];
 			sums[i] += scoreEngs[i];
@@ -40,10 +41,10 @@ public class ArrayFA {
 			totalSum[0] = scoreMaths[i];
 		}
 		
+		// 과목별 평균
 		for(int i = 0; i < SUBJECT_COUNT; i++) {
 			totalAvg[i] = (float)totalSum[i] / STUDENT_LENGTH;
 		}
-		
 		System.out.println("=".repeat(80));
 		System.out.println(" 샛별반 성적표");
 		System.out.println("=".repeat(80));
@@ -74,8 +75,8 @@ public class ArrayFA {
 		float avgOfTotalAvg = 0;
 		// 평균 출력하면서 평균의 평균 계산하기
 		for(int i = 0; i <SUBJECT_COUNT; i++) {
-			System.out.printf("%4.0f\n", totalAvg[i]);
 			avgOfTotalAvg += totalAvg[i];
+			System.out.printf("%4d\t", totalAvg[i]);
 		}
 		avgOfTotalAvg /= SUBJECT_COUNT;
 		System.out.printf("\t%5.2f\n", avgOfTotalAvg);

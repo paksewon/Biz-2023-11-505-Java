@@ -42,15 +42,15 @@ public class ArrayE {
 		System.out.println("학번\t국어\t영어\t수학\t총점\t평균");
 
 		for (int i = 0; i < STUDENT_LENGTH; i++) {
-			System.out.printf("%2d\t", i +1);
+			System.out.printf("%3d\t", i +1);
 			System.out.printf("%3d\t", scoreKors[i]);
 			System.out.printf("%3d\t", scoreEngs[i]);
 			System.out.printf("%3d\t", scoreMath[i]);
 			System.out.printf("%4d\t", sums[i]);
 			System.out.printf("%5.2f\n", avg[i]);
 		}
-		System.out.printf("-".repeat(80));
-		System.out.println();
+			System.out.println("=".repeat(80));
+			System.out.println("-".repeat(80));
 	}
 
 }

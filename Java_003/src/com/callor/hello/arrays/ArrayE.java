@@ -8,6 +8,33 @@ public class ArrayE {
 	 * 배열 요소에 값 할당, 값 찾기 부분은 코드를 분리하여 작성
 	 */
 	public static void main(String[] args) {
+		int[] nums = new int [10];
+		for (int i = 0; i < 10; i++) {
+			nums[i] = (int)(Math.random() * 50) +51;
+			
+		}
+		for (int i = 0; i < 10; i++) {
+			if(nums[i] > 80);
+			System.out.printf("index %d 번 요소의 값 : %d\n", i, nums[i]);
+				
+		}
+	}
+		
+}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	/* public static void main(String[] args) {
 		int[] nums = new int[10];
 		for(int i = 0; i < 10; i++ ) {
 			nums[i] = (int)(Math.random() * 50) + 51;
@@ -19,4 +46,4 @@ public class ArrayE {
 		}
 	}
 
-}
+}*/

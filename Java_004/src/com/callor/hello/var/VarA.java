@@ -33,6 +33,7 @@ public class VarA {
 		
 		System.out.println(nation1);
 		System.out.println(nation2);
+		System.out.println(nation3);
 		
 	}
 
