@@ -37,7 +37,18 @@ public class InputG {
 			} else {
 				System.out.println(num + " 는 짝수가 아님");
 			}
-
+			boolean isPrime = true;
+			for (int i = 2; i < num; i++) {
+				if (num % i == 0) {
+					isPrime = false;
+					break;
+				}
+			}
+			if (isPrime == true) {
+				System.out.println(num + " 는 소수이다");
+			} else {
+				System.out.println(num + " 는 소수아님");
+			}
 		}
 	}
 }
