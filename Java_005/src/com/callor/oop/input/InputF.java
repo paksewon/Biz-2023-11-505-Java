@@ -48,7 +48,7 @@ public class InputF {
 				System.out.printf("%d 는 짝수가 아니다\n", num);
 				Line.dLine(30);
 			}
-		}
+		}                                
 	}
 }
 		
