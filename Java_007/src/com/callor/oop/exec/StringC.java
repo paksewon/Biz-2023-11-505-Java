@@ -33,7 +33,6 @@ public class StringC {
 		 * 하도록 강제 하고 있다
 		 */
 		try {
-
 			is = new FileInputStream(dataFile); // << try 로 반드시 쓰기
 		} catch (FileNotFoundException e) {
 			// TODO Auto-generated catch block
@@ -46,13 +45,17 @@ public class StringC {
 
 		while (scan.hasNext()) { // has = 값을 가지고 있냐
 			String line = scan.nextLine();
-			System.out.println(line);
+			String[] result = line.split(",");
+			for (int i = 0; i < result.length; i++) {
+				System.out.printf("%s  ", result[i]);
+			}
+			int sum = 0;
+			for (int i = 0; i < result.length; i++) {
+				sum += Integer.valueOf(result[i]);
+			}
+			System.out.println("총점 : " + sum);
 		}
 		scan.close(); // 파일은 scan.close를 해주자
-		
-		String line = null;
-		String[] result = line.split(",");
-		
-		
+
 	}
 }
