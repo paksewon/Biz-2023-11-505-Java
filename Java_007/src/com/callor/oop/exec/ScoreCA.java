@@ -1,6 +1,7 @@
 package com.callor.oop.exec;
 
 import com.callor.oop.service.ScoreService;
+import com.callor.oop.util.Line;
 
 public class ScoreCA {
 	public static void main(String[] args) {
@@ -15,10 +16,20 @@ public class ScoreCA {
 			scores[i].scoreEng = (int) (Math.random() * 50) + 51;
 			scores[i].scoreMath = (int) (Math.random() * 50) + 51;
 		}
-		System.out.println(scores[0].scoreKor);
-		System.out.println(scores[0].scoreEng);
-		System.out.println(scores[0].scoreMath);
-
+		
+		// 배열에 저장된 점수 화면에 출력하기
+		// Line.title("성적표");
+		Line.title(50,"성적표");
+		System.out.println("국어\t영어\t수학\t총점\t평균");
+		Line.sLine(50);
+		for(int i = 0; i < scores.length; i++) {
+			System.out.printf("%3d\t", scores[i].scoreKor);
+			System.out.printf("%3d\t", scores[i].scoreEng);
+			System.out.printf("%3d\t", scores[i].scoreMath);
+			System.out.printf("%3d\t", scores[i].getScoreTotal());
+			System.out.printf("%3.2f\t\n", scores[i].getScoreAvg());
+		}
+		Line.dLine(50);
 	}
 
 }
