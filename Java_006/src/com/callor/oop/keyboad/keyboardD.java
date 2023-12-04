@@ -28,7 +28,7 @@ public class keyboardD {
 			if (num < 1 || num > 50) {
 				System.out.println("1~50 범위의 정수를 입력하세요\n");
 				continue;
-			}
+			} 
 			if (num == rndNum) {
 				System.out.println("참 잘했어요 : " + num);
 				break;
@@ -47,8 +47,5 @@ public class keyboardD {
 				System.out.printf("%d 번째 정답 못 맞춤\n", count);
 			}
 			System.out.println("GAME OVER!!");
-			
-			
-			
 	} // end main
 }
