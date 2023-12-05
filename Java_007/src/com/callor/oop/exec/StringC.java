@@ -23,7 +23,6 @@ public class StringC {
 		String dataFile = "src/com/callor/oop/exec/data.txt";
 		Scanner scan = null;
 		InputStream is = null;
-
 		/*
 		 * ...data.txt 파일을 읽어서 무언가 처리를 하려고 한다 Java 에서 파일을 읽어서 무언가 처리를 하려면 먼저 파일을 open 해야
 		 * 한다 이때 파일을 open 하는 도구 중에 FileInputStream 이라는 도구를 사용할 것이다
