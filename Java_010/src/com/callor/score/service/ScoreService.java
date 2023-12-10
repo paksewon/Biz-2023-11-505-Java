@@ -97,6 +97,7 @@ public class ScoreService {
 		Line.dLine(50);
 		System.out.println("학번\t국어\t영어\t수학\t총점\t평균");
 		Line.sLine(50);
+		
 		for (ScoreDto dto : scores) {
 			System.out.printf("%s\t", dto.stdNum);
 

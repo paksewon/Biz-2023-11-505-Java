@@ -42,7 +42,7 @@ public class NumberService {
 		}// end while
 	} // end inputNumber(String title)
 
-	public int inputNumber(String title, int start, int end) { // 맥에 변수가 다르면 똑같이 선언가능
+	public int inputNumber(String title, int start, int end) { // 매개 변수가 다르면 똑같이 선언가능
 		while(true) {
 			Line.dLine(50);
 			System.out.printf("%d ~ %d 범위의 정수를 입력하세요\n",start,end);
