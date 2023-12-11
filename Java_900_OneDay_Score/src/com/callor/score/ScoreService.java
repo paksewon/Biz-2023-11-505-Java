@@ -6,8 +6,8 @@ import java.util.List;
 //import com.callor.score.model.ScoreDto;
 
 public class ScoreService {
-	List<ScoreDto> scores = null;
-	ScoreDto scoreDto = null;
+	private List<ScoreDto> scores = null;
+	private ScoreDto scoreDto = null;
 
 	public ScoreService() {
 		scores = new ArrayList<ScoreDto>();
@@ -24,10 +24,11 @@ public class ScoreService {
 		}
 
 		for (int i = 0; i < 10; i++) { // 학번
+//		for (int i = 0; i < 10; i++) { 
 			int intStdNum = Integer.valueOf(strStdNum.substring(2));
 			intStdNum++;
 			strStdNum = String.format("23%03d", intStdNum);
-
+			
 			scoreDto = new ScoreDto();
 
 			scoreDto.stdNum = strStdNum; // 과목성적
