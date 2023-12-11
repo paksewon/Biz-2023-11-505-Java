@@ -53,9 +53,4 @@ public class StudentService {
 		studentDto.addr = stdAddr;
 		
 	}
-		public static boolean check(int check) {
-			
-			return false;
-			
-		}
 }

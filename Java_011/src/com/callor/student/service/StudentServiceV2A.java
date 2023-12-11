@@ -59,9 +59,6 @@ public class StudentServiceV2A {
 			inputStr[index] = str;
 		}
 		
-		System.out.println("학번중복");
-		
-		
 		StudentDto stDto = new StudentDto();
 		stDto.num = inputStr[학번];
 		stDto.name = inputStr[이름];
@@ -70,8 +67,6 @@ public class StudentServiceV2A {
 		stDto.tel = inputStr[전화번호];
 		stDto.addr = inputStr[주소];
 		students.add(stDto); // List<StudentDto> students 리스트에 추가
-		
-		
 		
 		return true; // boolean
 	}// end inputStudent()
