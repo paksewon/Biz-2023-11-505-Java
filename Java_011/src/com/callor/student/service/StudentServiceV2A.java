@@ -59,9 +59,6 @@ public class StudentServiceV2A {
 			inputStr[index] = str;
 		}
 		
-		System.out.println("학번중복");
-		
-		
 		StudentDto stDto = new StudentDto();
 		stDto.num = inputStr[학번];
 		stDto.name = inputStr[이름];

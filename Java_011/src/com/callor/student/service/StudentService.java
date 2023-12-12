@@ -1,5 +1,7 @@
 package com.callor.student.service;
 
+import java.util.ArrayList;
+import java.util.List;
 /*
  * 1. inputStudent() method 를 선언하고
  * 키보드를 사용하여 학번,이름,학과,학년,전화번호,주소를 입력받아
@@ -23,39 +25,45 @@ public class StudentService {
 
 	}
 
-	public void inputStudent() {
+//	public void inputStudent() {
+	public boolean inputStudent() {
 
 		System.out.print("학번을 입력하세요");
 		String stdNum = scan.nextLine();
-
 		System.out.print("이름을 입력하세요");
 		String stdName = scan.nextLine();
-
 		System.out.print("학과를 입력하세요");
 		String stdDept = scan.nextLine();
-
 		System.out.print("학년을 입력하세요");
 		String stdGrade = scan.nextLine();
-
 		System.out.print("전화번호를 입력하세요");
 		String stdTel = scan.nextLine();
-
 		System.out.print("주소를 입력하세요");
 		String stdAddr = scan.nextLine();
 
 		StudentDto studentDto = new StudentDto();
-		
 		studentDto.num = stdNum;
 		studentDto.name = stdName;
 		studentDto.dept = stdDept;
 		studentDto.grade = stdGrade;
 		studentDto.tel = stdTel;
 		studentDto.addr = stdAddr;
-		
+		return true;
+
+//		if (studentDto.num == stdNum.equals()) {
+//
+//		}
 	}
-		public static boolean check(int check) {
-			
-			return false;
-			
+
+	public void inputStudens() {
+		boolean result = true;
+
+		while (result) {
+			result = inputStudent();
+			for (int i = 0; i < 10; i++) {
+				StudentDto stDto = new StudentDto();
+			}
 		}
+		System.out.println("입력 종료");
+	}
 }
