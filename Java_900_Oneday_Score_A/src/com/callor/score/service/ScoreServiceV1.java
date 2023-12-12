@@ -28,6 +28,7 @@ public class ScoreServiceV1 {
 		// 생성자에서 아래와 같이 scores 를 생성하면
 		// 생성자를 벗어난 후 scores 는 소멸된다
 		// 클래스 영역에 선언된 scores 는 여전히 null 이다
+		
 		// List<ScoreDto> scores = new ArrayList<ScoreDto>();
 
 		// 클래스 영역에 선언되 scores 를 생성하는 코드

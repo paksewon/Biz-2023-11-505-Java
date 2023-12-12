@@ -68,8 +68,6 @@ public class StudentServiceV2A {
 		stDto.addr = inputStr[주소];
 		students.add(stDto); // List<StudentDto> students 리스트에 추가
 		
-		
-		
 		return true; // boolean
 	}// end inputStudent()
 	

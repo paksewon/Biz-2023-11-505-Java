@@ -9,7 +9,7 @@ import java.util.List;
  * 
  * 2. nums 리스트에 저장된 정수 중에서 77을 찾아서 있으면 "있다" 라고 출력
  * 
- * 3.. nums 리스트에 저장된 정수 중에서 77을 찾아서 있으면 몇번째인지 없으면 "없음" 이라고 출력
+ * 3. nums 리스트에 저장된 정수 중에서 77을 찾아서 있으면 몇번째인지 없으면 "없음" 이라고 출력
  */
 public class ListA {
 	public static void main(String[] args) { // 정보를 만드는 부분
