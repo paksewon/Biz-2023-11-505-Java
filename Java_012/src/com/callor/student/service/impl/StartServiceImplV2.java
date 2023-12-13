@@ -1,7 +1,5 @@
 package com.callor.student.service.impl;
 
-import java.net.MulticastSocket;
-
 import com.callor.student.models.MenuIndex;
 import com.callor.student.utils.Line;
 
@@ -11,6 +9,12 @@ public class StartServiceImplV2 extends StartServiceImplV1 {
 		// V1의 생성자를 호출하여 v1 생성자에 있는
 		// 코드를 그대로 실행하겠다
 		super();
+		
+		// ImplV1 에서는 St..ServiceImplv1()을 사용하여
+		// stService 를 초기화 하였다
+		// 하지만 여기에서는 ImplV2를 사용하고 싶다
+		// 그럴때는 다시 stService를 ImplV2 로 초기화를 하면된다.
+		// stService = new StudentServiceImplV2();
 	}
 
 	@Override
@@ -56,19 +60,18 @@ public class StartServiceImplV2 extends StartServiceImplV1 {
 	public void startApp() {
 		while (true) {
 			Integer selecMenu = this.selectMenu();
-			if (selecMenu == null)
-				break;
-			else if (selecMenu == 1) {
-				System.out.println("학생정보 입력");
-			} else if (selecMenu == 2) {
+			if (selecMenu == null) break;
+			else if (selecMenu == MenuIndex.학생정보_입력.getIndex()) {
+				// System.out.println("학생정보 입력");
+				stService.inputStudents();
+			} else if (selecMenu == MenuIndex.학생정보_조회.getIndex()) {
 				System.out.println("학생정보 조회");
-			} else if (selecMenu == 3) {
+			} else if (selecMenu == MenuIndex.학생정보_가져오기.getIndex()) {
 				System.out.println("학생정보 가져오기");
-			} else if (selecMenu == 4) {
-				System.out.println("학생정보 출력");
+			} else if (selecMenu == MenuIndex.학생정보_출력.getIndex()) {
+				// System.out.println("학생정보 출력");
+				stService.printStudent();
 			}
-
 		}
 	}
-
 }
