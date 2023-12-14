@@ -26,7 +26,7 @@ public class StartServiceImplV2 extends StartServiceImplV1 {
 		Line.sLine(50);
 		for (MenuIndex menu : MenuIndex.values()) {
 			String item = menu.toString();
-			item = item.replace("_", ""); // 언더바를 빈칸으로 바꿔주는 함수
+			item = item.replace("_", " "); // 언더바를 빈칸으로 바꿔주는 함수
 			System.out.printf("%d. %s\n", menu.getIndex(), item);
 		}
 		System.out.println("QUIT. 종료");
@@ -73,5 +73,5 @@ public class StartServiceImplV2 extends StartServiceImplV1 {
 				stService.printStudent();
 			}
 		}
-	}
+	} // end startApp()
 }

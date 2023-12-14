@@ -10,7 +10,6 @@ public class StartServiceImplV1 implements StartService {
 
 	protected Scanner scan = null;
 	protected StudentService stService = null;
-	
 
 	public StartServiceImplV1() {
 		scan = new Scanner(System.in);
