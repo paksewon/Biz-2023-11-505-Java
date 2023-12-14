@@ -1,15 +1,16 @@
 package com.callor.student.service.impl;
 
 import com.callor.student.models.MenuIndex;
+import com.callor.student.service.StudentService;
 
 public class StartServiceImplV3 extends StartServiceImplV2 {
 
-	public StartServiceImplV3() {
+	public StartServiceImplV3(StudentService stService) {
 		// 상속받은 StartServiceImplV2 의 생성자를 호출하기
 		// V1에 있는 생성자 호출
-		super();
+		super(stService);
 //		stService = new StudentServiceImplV2();
-		stService = new StudentServiceImplV3();
+		this.stService = stService; // 클래스 영역에 변수 매개변수
 	}
 
 	@Override
